@@ -1,7 +1,7 @@
 export const profile = {
   name: "Roshan Merugu",
-  handle: "RM_SYS",
-  role: "Full-Stack Developer // Cybersecurity",
+  handle: "RM",
+  role: "Full-Stack Developer",
   tagline: "Building secure, futuristic web experiences with modern tech.",
   intro:
     "Final-year B.Tech CSE (Cybersecurity) engineer crafting responsive, user-focused interfaces. I ship clean front-end systems where every interaction is intentional and every pixel is accountable.",
@@ -28,7 +28,7 @@ export const about = {
   ],
   facts: [
     { k: "Year", v: "B.TECH IV" },
-    { k: "Stream", v: "CSE / SEC" },
+    { k: "Stream", v: "CSE / CS" },
     { k: "Base", v: "HYDERABAD" },
     { k: "Status", v: "ACTIVE" },
   ],
@@ -86,6 +86,18 @@ export const projects: Project[] = [
   {
     id: "04",
     index: "PROJ_004",
+    title: "Personal Portfolio Website",
+    year: "2026",
+    description:
+      "A modern, responsive portfolio website showcasing my work and skills as a developer.",
+    stack: ["HTML5", "CSS3", "JavaScript", "Responsive UI", "Vercel, Tailwind CSS, React.js, TypeScript, Vite"],
+    demo: "https://personal-portfolio-xi-three-61.vercel.app/",
+    github: "https://github.com/Roshan-Merugu/Personal-Portfolio.git",
+    status: "LIVE",
+  },
+  {
+    id: "05",
+    index: "PROJ_005",
     title: "Frontend Mentor Lab",
     year: "Ongoing",
     description:
@@ -105,6 +117,34 @@ export type Achievement = {
 
 export const achievements: Achievement[] = [
   {
+    year: "2026",
+    title: "DSA CodeVerse — Weekly Contest #32",
+    org: "NxtWave CCBP 4.0",
+    detail:
+      "Secured Rank 2 in the DSA CodeVerse weekly contest, demonstrating consistent problem-solving speed and algorithmic precision under pressure.",
+  },
+  {
+    year: "2026",
+    title: "DSA CodeVerse — Weekly Contest #31",
+    org: "NxtWave CCBP 4.0",
+    detail:
+      "Secured Rank 5 in the DSA CodeVerse weekly contest — sharpening data structures, time complexity, and competitive coding instincts.",
+  },
+  {
+    year: "2026",
+    title: "JavaScript Essentials",
+    org: "NxtWave CCBP 4.0",
+    detail:
+      "Achievement certificate covering core JavaScript: DOM manipulation, async patterns, ES6+ features, and the foundations behind every dynamic interface I build.",
+  },
+  {
+    year: "2026",
+    title: "Build Your Own Dynamic Web Application",
+    org: "NxtWave CCBP 4.0",
+    detail:
+      "Hands-on certification for engineering a fully dynamic web app — wiring JavaScript logic, state, and user flows end-to-end.",
+  },
+  {
     year: "2025",
     title: "India's Greatest GenAI Buildathon",
     org: "OpenAI Academy × NxtWave",
@@ -113,38 +153,10 @@ export const achievements: Achievement[] = [
   },
   {
     year: "2025",
-    title: "DSA CodeVerse — Weekly Contest #32",
-    org: "NxtWave CCBP 4.0",
-    detail:
-      "Secured Rank 2 in the DSA CodeVerse weekly contest, demonstrating consistent problem-solving speed and algorithmic precision under pressure.",
-  },
-  {
-    year: "2025",
-    title: "DSA CodeVerse — Weekly Contest #31",
-    org: "NxtWave CCBP 4.0",
-    detail:
-      "Secured Rank 5 in the DSA CodeVerse weekly contest — sharpening data structures, time complexity, and competitive coding instincts.",
-  },
-  {
-    year: "2025",
     title: "MCP Project — Model Context Protocol",
     org: "NxtWave CCBP 4.0",
     detail:
       "Project completion certificate for building with the Model Context Protocol — integrating Cursor IDE, Pipedream, and MCP servers for AI-assisted development workflows.",
-  },
-  {
-    year: "2025",
-    title: "JavaScript Essentials",
-    org: "NxtWave CCBP 4.0",
-    detail:
-      "Achievement certificate covering core JavaScript: DOM manipulation, async patterns, ES6+ features, and the foundations behind every dynamic interface I build.",
-  },
-  {
-    year: "2025",
-    title: "Build Your Own Dynamic Web Application",
-    org: "NxtWave CCBP 4.0",
-    detail:
-      "Hands-on certification for engineering a fully dynamic web app — wiring JavaScript logic, state, and user flows end-to-end.",
   },
   {
     year: "2025",

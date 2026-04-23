@@ -30,18 +30,51 @@ export const Hero = () => {
         </aside>
 
         {/* Center content */}
-        <div className="col-span-1 md:col-span-6 px-6 py-24 md:py-36 flex flex-col justify-center">
-          <div className="mono text-volt text-xs uppercase tracking-widest mb-8 flex items-center gap-3 animate-fade-up">
+        <div className="col-span-1 md:col-span-6 px-6 py-24 md:py-36flex flex-col justify-center items-center md:items-start text-center md:text-left order-1        md:order-none">
+         <div className="mono text-volt text-xs uppercase tracking-widest mb-8 flex items-center justify-center md:justify-start gap-3 animate-fade-up">
             <span className="inline-block w-8 h-px bg-volt" />
             {profile.role}
           </div>
 
-          <h1
-            className="display text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-main font-medium tracking-tight leading-[0.95] mb-8 text-balance animate-fade-up"
-            style={{ animationDelay: "80ms" }}
-          >
+          <h1 className="display text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-text-main font-medium tracking-tight leading-[0.95] mb-8 text-balance animate-fade-up"
+            style={{ animationDelay: "80ms" }}>
             {profile.name}
           </h1>
+                          {/* Array Telemetry (moved) */}
+                <div className="my-10 flex justify-center md:hidden">
+                  <div className="w-48 sm:w-56 md:w-64 bg-panel border border-wire p-1 group">
+                    <div className="w-full aspect-square bg-wire/40 relative overflow-hidden">
+                      <img
+                        src={portrait}
+                        alt={`${profile.name} — ${profile.role}`}
+                        className="absolute inset-0 w-full h-full object-cover grayscale contrast-110 group-hover:grayscale-0 transition-all duration-500"
+                      />
+
+                      {/* Scanline */}
+                      <div
+                        className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-40"
+                        style={{
+                          backgroundImage:
+                            "repeating-linear-gradient(0deg, hsl(var(--void) / 0.6) 0px, hsl(var(--void) / 0.6) 1px, transparent 1px, transparent 3px)",
+                        }}
+                      />
+
+                      {/* Vignette */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-transparent to-void/30" />
+
+                      {/* Corners */}
+                      <div className="absolute top-2 left-2 w-3 h-3 border-t border-l border-volt" />
+                      <div className="absolute top-2 right-2 w-3 h-3 border-t border-r border-volt" />
+                      <div className="absolute bottom-2 left-2 w-3 h-3 border-b border-l border-volt" />
+                      <div className="absolute bottom-2 right-2 w-3 h-3 border-b border-r border-volt" />
+
+                      {/* Label */}
+                      <div className="absolute top-2 left-1/2 -translate-x-1/2 mono text-[9px] text-volt bg-void/70 px-2 py-0.5 border border-volt/40">
+                        Subject // {profile.handle}
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
           <p
             className="text-text-dim text-lg md:text-xl max-w-[48ch] mb-12 leading-relaxed text-pretty animate-fade-up"
@@ -86,62 +119,47 @@ export const Hero = () => {
             </div>
           </div>
         </div>
+                <aside className="hidden md:flex flex-col justify-center p-8 col-span-3 border-l border-wire animate-fade-in">
+                  <div className="mono text-[10px] text-text-dim uppercase tracking-widest mb-6 flex items-center gap-3">
+                    <div className="size-1.5 border border-volt" />
+                    Array Telemetry
+                  </div>
 
-        {/* Right telemetry column */}
-        <aside className="hidden md:flex flex-col justify-center p-8 col-span-3 border-l border-wire animate-fade-in" style={{ animationDelay: "200ms" }}>
-          <div className="mono text-[10px] text-text-dim uppercase tracking-widest mb-6 flex items-center gap-3">
-            <div className="size-1.5 border border-volt" />
-            Array Telemetry
-          </div>
-          <div className="bg-panel border border-wire p-1 group">
-            <div className="w-full aspect-square bg-wire/40 relative overflow-hidden">
-              <img
-                src={portrait}
-                alt={`${profile.name} — ${profile.role}`}
-                loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover grayscale contrast-110 group-hover:grayscale-0 transition-all duration-500"
-              />
-              {/* Scanline overlay */}
-              <div
-                className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-40"
-                style={{
-                  backgroundImage:
-                    "repeating-linear-gradient(0deg, hsl(var(--void) / 0.6) 0px, hsl(var(--void) / 0.6) 1px, transparent 1px, transparent 3px)",
-                }}
-                aria-hidden
-              />
-              {/* Vignette */}
-              <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-transparent to-void/30 pointer-events-none" aria-hidden />
-              {/* Corner brackets */}
-              <div className="absolute top-2 left-2 w-3 h-3 border-t border-l border-volt" />
-              <div className="absolute top-2 right-2 w-3 h-3 border-t border-r border-volt" />
-              <div className="absolute bottom-2 left-2 w-3 h-3 border-b border-l border-volt" />
-              <div className="absolute bottom-2 right-2 w-3 h-3 border-b border-r border-volt" />
-              {/* Target tag */}
-              <div className="absolute top-2 left-1/2 -translate-x-1/2 mono text-[9px] uppercase tracking-widest text-volt bg-void/70 px-2 py-0.5 border border-volt/40">
-                Subject // {profile.handle}
-              </div>
-            </div>
-            <div className="mt-4 px-1 grid grid-cols-2 gap-3 mono text-[10px] uppercase tracking-widest tabular-nums">
-              <div>
-                <div className="text-text-mute mb-1">Projects</div>
-                <div className="text-text-main">12+ Built</div>
-              </div>
-              <div>
-                <div className="text-text-mute mb-1">Stack</div>
-                <div className="text-volt">Full-Front</div>
-              </div>
-              <div>
-                <div className="text-text-mute mb-1">Focus</div>
-                <div className="text-text-main">UI / Sec</div>
-              </div>
-              <div>
-                <div className="text-text-mute mb-1">Streak</div>
-                <div className="text-text-main">Daily</div>
-              </div>
-            </div>
-          </div>
-        </aside>
+                    <div className="bg-panel border border-wire p-1 group">
+                      <div className="w-full aspect-square bg-wire/40 relative overflow-hidden">
+
+                        <img
+                          src={portrait}
+                          alt={`${profile.name} — ${profile.role}`}
+                          className="absolute inset-0 w-full h-full object-cover grayscale contrast-110 group-hover:grayscale-0 transition-all duration-500"
+                        />
+
+                        {/* Scanline */}
+                        <div
+                          className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-40"
+                          style={{
+                            backgroundImage:
+                              "repeating-linear-gradient(0deg, hsl(var(--void) / 0.6) 0px, hsl(var(--void) / 0.6) 1px, transparent 1px, transparent 3px)",
+                          }}
+                        />
+
+                        {/* Vignette */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-transparent to-void/30" />
+
+                        {/* Corners */}
+                        <div className="absolute top-2 left-2 w-3 h-3 border-t border-l border-volt" />
+                        <div className="absolute top-2 right-2 w-3 h-3 border-t border-r border-volt" />
+                        <div className="absolute bottom-2 left-2 w-3 h-3 border-b border-l border-volt" />
+                        <div className="absolute bottom-2 right-2 w-3 h-3 border-b border-r border-volt" />
+
+                        {/* ✅ THIS ADDS: Subject // RM_SYS */}
+                        <div className="absolute top-2 left-1/2 -translate-x-1/2 mono text-[9px] uppercase tracking-widest text-volt bg-void/70 px-2 py-0.5 border border-volt/40">
+                          Subject // {profile.handle}
+                        </div>
+
+                      </div>
+                    </div>
+                </aside>
       </div>
     </section>
   );
