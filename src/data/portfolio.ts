@@ -75,10 +75,10 @@ export const projects: Project[] = [
     id: "03",
     index: "PROJ_003",
     title: "AeroHarvest — Farm to Table in Hours",
-    year: "2025",
+    year: "2026",
     description:
       "Smart farm-to-consumer MVP that compresses the agricultural supply chain — direct, intermediary-free delivery from farms to customers within hours. Responsive UI focused on freshness, transparency, and speed.",
-    stack: ["HTML5", "CSS3", "JavaScript", "Responsive UI", "Vercel"],
+    stack: ["HTML5", "CSS3", "JavaScript", "Responsive UI", "Vercel, Tailwind CSS, React.js, TypeScript, Vite, Supabase"],
     demo: "https://aero-harvest-farm-to-table-in-hours.vercel.app/",
     github: "https://github.com/Roshan-Merugu/AeroHarvest---Farm-to-Table-in-Hours",
     status: "LIVE",
@@ -188,13 +188,6 @@ export const achievements: Achievement[] = [
   },
   {
     year: "2024",
-    title: "Cyber Security Training",
-    org: "Corizo",
-    detail:
-      "Training certificate covering threat analysis, incident response, and the practical day-to-day workflow of a cybersecurity analyst.",
-  },
-  {
-    year: "2024",
     title: "Build Your Own Responsive Website",
     org: "NxtWave CCBP 4.0",
     detail:
@@ -250,7 +243,7 @@ export const education: EducationEntry[] = [
   {
     period: "2019",
     degree: "Matriculation — Class X",
-    institution: "Secondary School",
+    institution: "Sri Sai Vidyalay High School, Seethaphalmandi",
     detail:
       "Completed secondary education with a focus on building the curiosity and discipline that later pulled me into engineering.",
   },
