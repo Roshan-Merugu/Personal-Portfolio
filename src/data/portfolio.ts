@@ -9,8 +9,7 @@ export const profile = {
   coords: { lat: "17.3850 N", lng: "78.4867 E" },
   email: "meruguroshan24@gmail.com",
   phone: "+91 79935 80896",
-  myresumeUrl:
-    "https://drive.google.com/file/d/1BjjN4Setp157PLaOgaTFrZBDajC6bXsC/view?usp=sharing",
+  myresumeUrl: "https://drive.google.com/file/d/1BjjN4Setp157PLaOgaTFrZBDajC6bXsC/view?usp=sharing",
   socials: {
     github: "https://github.com/Roshan-Merugu",
     linkedin: "https://www.linkedin.com/in/roshanmerugu/",
@@ -91,7 +90,7 @@ export const projects: Project[] = [
     description:
       "A modern, responsive portfolio website showcasing my work and skills as a developer.",
     stack: ["HTML5", "CSS3", "JavaScript", "Responsive UI", "Vercel, Tailwind CSS, React.js, TypeScript, Vite"],
-    demo: "https://personal-portfolio-xi-three-61.vercel.app/",
+    demo: "https://personal-portfolio-phi-liart-75.vercel.app/",
     github: "https://github.com/Roshan-Merugu/Personal-Portfolio.git",
     status: "LIVE",
   },
