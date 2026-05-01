@@ -9,13 +9,8 @@ export const profile = {
   coords: { lat: "17.3850 N", lng: "78.4867 E" },
   email: "meruguroshan24@gmail.com",
   phone: "+91 79935 80896",
-<<<<<<< HEAD
   myresumeUrl:
     "https://drive.google.com/file/d/1BjjN4Setp157PLaOgaTFrZBDajC6bXsC/view?usp=sharing",
-=======
-  resumeUrl:
-    "https://drive.google.com/file/d/1d-R6B4b31GDlruaHSdIiutJiMzTSu5Fb/view?usp=sharing",
->>>>>>> 69fed1b7d8717fc4bc0d11ef97ff589b83b0170f
   socials: {
     github: "https://github.com/Roshan-Merugu",
     linkedin: "https://www.linkedin.com/in/roshanmerugu/",
