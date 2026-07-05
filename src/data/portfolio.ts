@@ -261,7 +261,7 @@ export const education: EducationEntry[] = [
     score: "CGPA: 6.81/10",
   },
   {
-    period: "2019 — 2022",
+    period: "2020 — 2022",
     degree: "Intermediate — MPC Stream",
     institution: "Little Flowers Junior College, Uppal",
     detail:
@@ -269,7 +269,7 @@ export const education: EducationEntry[] = [
     score: "Percentage: 66%",
   },
   {
-    period: "2019",
+    period: "2019 — 2020",
     degree: "Matriculation — Class X",
     institution: "Sri Sai Vidyalay High School, Seethaphalmandi",
     detail:
