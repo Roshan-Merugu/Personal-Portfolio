@@ -5,7 +5,7 @@ import { GraduationCap } from "lucide-react";
 export const Education = () => {
   return (
     <Section
-      id="archive"
+      id="log"
       index="SEC_04"
       label="Trace Archive"
       title="Academic signal — calibrated over the years."

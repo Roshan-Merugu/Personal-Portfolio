@@ -21,7 +21,7 @@ export const profile = {
 
 export const about = {
   body: [
-    "I'm Roshan — A B.Tech BTech Graduate from Aurora's Technological and Research Institute, specializing in Computer Science with a focus on Cybersecurity. My toolkit is anchored in HTML, CSS, JavaScript, Bootstrap and Flexbox, and I gravitate toward clean, accessible, mobile-first interfaces.",
+    "I'm Roshan — A BTech Graduate from Aurora's Technological and Research Institute, specializing in Computer Science with a focus on Cybersecurity. My toolkit is anchored in HTML, CSS, JavaScript, Bootstrap and Flexbox, and I gravitate toward clean, accessible, mobile-first interfaces.",
     "I've shipped responsive websites, API-driven applications, and a series of Frontend Mentor challenges — each one a small lab for sharpening craft. I love the velocity of startup environments: taking ownership, learning fast, and pushing every project a little further than the last.",
     "Long-term, I'm building toward becoming a Full-Stack Developer working on innovative products — and eventually launching a startup of my own around solutions that genuinely matter.",
   ],
@@ -48,7 +48,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "01",
-    index: "PROJ_001",
+    index: "PROJ_01",
     title: "Restaurant Website",
     year: "2024",
     description:
@@ -60,7 +60,7 @@ export const projects: Project[] = [
   },
   {
     id: "02",
-    index: "PROJ_002",
+    index: "PROJ_02",
     title: "Live Weather App",
     year: "2024",
     description:
@@ -72,7 +72,7 @@ export const projects: Project[] = [
   },
   {
     id: "03",
-    index: "PROJ_003",
+    index: "PROJ_03",
     title: "AeroHarvest — Farm to Table in Hours",
     year: "2026",
     description:
@@ -84,7 +84,7 @@ export const projects: Project[] = [
   },
   {
     id: "04",
-    index: "PROJ_005",
+    index: "PROJ_04",
     title: "Frontend Mentor Lab",
     year: "Ongoing",
     description:

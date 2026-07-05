@@ -1,13 +1,15 @@
 import { Section } from "./Section";
 import { achievements } from "@/data/portfolio";
+import { certifications } from "@/data/portfolio";
+import { Certificates } from "./Certificates";
 import { Award } from "lucide-react";
 
 export const Achievements = () => {
   return (
-    <Section id="log" index="SEC_03" label="Logbook" title="Milestones, recognitions, signals received.">
+    <Section id="archive" index="SEC_03" label="Achievements & Certifications" title="Milestones & certifications.">
       <ol className="relative border-l border-wire ml-2">
         {achievements.map((a, i) => (
-          <li key={i} className="pl-8 pb-10 last:pb-0 relative group">
+          <li key={`ach-${i}`} className="pl-8 pb-10 last:pb-0 relative group">
             <span className="absolute -left-[7px] top-1.5 size-3 border border-wire bg-void grid place-items-center group-hover:border-volt transition-colors">
               <span className="size-1 bg-text-dim group-hover:bg-volt transition-colors" />
             </span>
@@ -29,6 +31,10 @@ export const Achievements = () => {
           </li>
         ))}
       </ol>
+
+      <div className="mt-12">
+        <Certificates />
+      </div>
     </Section>
   );
 };

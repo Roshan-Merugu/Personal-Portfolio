@@ -25,7 +25,7 @@ export const Hero = () => {
             <span>Zero-Latency</span>
             <div className="w-8 h-px bg-wire mt-6 mb-4" />
             <span className="text-text-dim">Year</span>
-            <span>MMXXIV</span>
+            <span>{new Date().getFullYear()}</span>
           </div>
         </aside>
 
