@@ -1,3 +1,4 @@
+// @ts-ignore: suppress missing React module/type declarations in this environment
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 import { profile } from "@/data/portfolio";
@@ -5,9 +6,9 @@ import { profile } from "@/data/portfolio";
 const NAV = [
   { id: "work", label: "Work" },
   { id: "about", label: "About" },
-  { id: "stack", label: "Stack" },
   { id: "log", label: "Log" },
   { id: "archive", label: "Archive" },
+  { id: "stack", label: "Stack" },
   { id: "transmit", label: "Transmit" },
 ];
 

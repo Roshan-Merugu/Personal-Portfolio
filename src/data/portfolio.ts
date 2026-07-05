@@ -4,12 +4,12 @@ export const profile = {
   role: "Full-Stack Developer",
   tagline: "Building secure, futuristic web experiences with modern tech.",
   intro:
-    "Final-year B.Tech CSE (Cybersecurity) engineer crafting responsive, user-focused interfaces. I ship clean front-end systems where every interaction is intentional and every pixel is accountable.",
+    "B.Tech Graduate crafting responsive, user-focused interfaces. I ship clean front-end systems where every interaction is intentional and every pixel is accountable.",
   location: "Hyderabad, IN",
   coords: { lat: "17.3850 N", lng: "78.4867 E" },
   email: "meruguroshan24@gmail.com",
   phone: "+91 79935 80896",
-  myresumeUrl: "https://drive.google.com/file/d/1BjjN4Setp157PLaOgaTFrZBDajC6bXsC/view?usp=sharing",
+  myresumeUrl: "https://drive.google.com/file/d/1EzeMqGUwU72sJwF2mPZbS4iOfAu9PoGk/view?usp=sharing",
   socials: {
     github: "https://github.com/Roshan-Merugu",
     linkedin: "https://www.linkedin.com/in/roshanmerugu/",
@@ -21,12 +21,12 @@ export const profile = {
 
 export const about = {
   body: [
-    "I'm Roshan — a final-year B.Tech student at Aurora's Technological and Research Institute, specializing in Computer Science with a focus on Cybersecurity. My toolkit is anchored in HTML, CSS, JavaScript, Bootstrap and Flexbox, and I gravitate toward clean, accessible, mobile-first interfaces.",
+    "I'm Roshan — A B.Tech BTech Graduate from Aurora's Technological and Research Institute, specializing in Computer Science with a focus on Cybersecurity. My toolkit is anchored in HTML, CSS, JavaScript, Bootstrap and Flexbox, and I gravitate toward clean, accessible, mobile-first interfaces.",
     "I've shipped responsive websites, API-driven applications, and a series of Frontend Mentor challenges — each one a small lab for sharpening craft. I love the velocity of startup environments: taking ownership, learning fast, and pushing every project a little further than the last.",
     "Long-term, I'm building toward becoming a Full-Stack Developer working on innovative products — and eventually launching a startup of my own around solutions that genuinely matter.",
   ],
   facts: [
-    { k: "Year", v: "B.TECH IV" },
+    { k: "Graduation", v: "2026" },
     { k: "Stream", v: "CSE / CS" },
     { k: "Base", v: "HYDERABAD" },
     { k: "Status", v: "ACTIVE" },
@@ -84,18 +84,6 @@ export const projects: Project[] = [
   },
   {
     id: "04",
-    index: "PROJ_004",
-    title: "Personal Portfolio Website",
-    year: "2026",
-    description:
-      "A modern, responsive portfolio website showcasing my work and skills as a developer.",
-    stack: ["HTML5", "CSS3", "JavaScript", "Responsive UI", "Vercel, Tailwind CSS, React.js, TypeScript, Vite"],
-    demo: "https://personal-portfolio-phi-liart-75.vercel.app/",
-    github: "https://github.com/Roshan-Merugu/Personal-Portfolio.git",
-    status: "LIVE",
-  },
-  {
-    id: "05",
     index: "PROJ_005",
     title: "Frontend Mentor Lab",
     year: "Ongoing",
@@ -106,28 +94,31 @@ export const projects: Project[] = [
     status: "WIP",
   },
 ];
-
-export type Achievement = {
-  year: string;
+export type Certification = {
   title: string;
   org: string;
+  year: string;
   detail: string;
 };
 
-export const achievements: Achievement[] = [
+export const certifications: Certification[] = [
   {
     year: "2026",
-    title: "DSA CodeVerse — Weekly Contest #32",
+    title: "Node.js",
     org: "NxtWave CCBP 4.0",
-    detail:
-      "Secured Rank 2 in the DSA CodeVerse weekly contest, demonstrating consistent problem-solving speed and algorithmic precision under pressure.",
+    detail:"Completion certificate for the Node.js course — mastering server-side JavaScript, Express.js, and API development.",
   },
   {
-    year: "2026",
-    title: "DSA CodeVerse — Weekly Contest #31",
-    org: "NxtWave CCBP 4.0",
-    detail:
-      "Secured Rank 5 in the DSA CodeVerse weekly contest — sharpening data structures, time complexity, and competitive coding instincts.",
+    year:"2026",
+    title:"Node.js (Basic)",
+    org:"HackerRank",
+    detail:"Completion certificate for the Node.js (Basic) course — covering fundamental server-side JavaScript concepts and basic API development.",
+  },
+  {
+    year:"2026",
+    title:"SQL (Basic),(Intermediate),(Advanced)",
+    org:"HackerRank",
+    detail:"Completion certificate for the SQL courses — covering fundamental, intermediate, and advanced SQL concepts and techniques."
   },
   {
     year: "2026",
@@ -213,6 +204,31 @@ export const achievements: Achievement[] = [
     detail:
       "Workshop certificate for hands-on UI design fundamentals using Flutter — layout primitives, theming, and component composition.",
   },
+  
+]
+export type Achievement = {
+  year: string;
+  title: string;
+  org: string;
+  detail: string;
+};
+
+export const achievements: Achievement[] = [
+  {
+    year: "2026",
+    title: "DSA CodeVerse — Weekly Contest #32",
+    org: "NxtWave CCBP 4.0",
+    detail:
+      "Secured Rank 2 in the DSA CodeVerse weekly contest, demonstrating consistent problem-solving speed and algorithmic precision under pressure.",
+  },
+  {
+    year: "2026",
+    title: "DSA CodeVerse — Weekly Contest #31",
+    org: "NxtWave CCBP 4.0",
+    detail:
+      "Secured Rank 5 in the DSA CodeVerse weekly contest — sharpening data structures, time complexity, and competitive coding instincts.",
+  },
+  
 ];
 
 export type EducationEntry = {
@@ -251,7 +267,7 @@ export const education: EducationEntry[] = [
 export const skills = [
   {
     category: "Core Stack",
-    items: ["React.js", "Vite", "Tailwind CSS", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3"],
+    items: ["React.js", "Vite", "Tailwind CSS", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3", "Node.js", "Express.js"],
   },
   {
     category: "Backend & Data",
