@@ -258,7 +258,7 @@ export const education: EducationEntry[] = [
     institution: "Aurora's Technological and Research Institute, Medchal",
     detail:
       "Specialization in Cybersecurity. Coursework spans secure systems, networking, and applied front-end engineering — paired with a continuous personal project pipeline.",
-    score: "Final Year",
+    score: "CGPA: 6.81/10",
   },
   {
     period: "2019 — 2022",
@@ -266,6 +266,7 @@ export const education: EducationEntry[] = [
     institution: "Little Flowers Junior College, Uppal",
     detail:
       "Mathematics, Physics & Chemistry foundation — the analytical baseline that powers everything from algorithmic thinking to UI math.",
+    score: "Percentage: 66%",
   },
   {
     period: "2019",
@@ -273,6 +274,7 @@ export const education: EducationEntry[] = [
     institution: "Sri Sai Vidyalay High School, Seethaphalmandi",
     detail:
       "Completed secondary education with a focus on building the curiosity and discipline that later pulled me into engineering.",
+    score: "CGPA: 9.7/10",
   },
 ];
 
