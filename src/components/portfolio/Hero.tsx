@@ -1,6 +1,6 @@
 import { ArrowDownToLine, ArrowRight, Github, Linkedin, Instagram } from "lucide-react";
 import { profile } from "@/data/portfolio";
-import portrait from "@/assets/roshan.jpg";
+import portrait from "@/assets/roshan4.png";
 
 export const Hero = () => {
   return (
@@ -40,39 +40,14 @@ export const Hero = () => {
             style={{ animationDelay: "80ms" }}>
             {profile.name}
           </h1>
-                          {/* Array Telemetry (moved) */}
-                <div className="my-10 flex justify-center md:hidden">
-                  <div className="w-48 sm:w-56 md:w-64 bg-panel border border-wire p-1 group">
-                    <div className="w-full aspect-square bg-wire/40 relative overflow-hidden">
-                      <img
-                        src={portrait}
-                        alt={`${profile.name} — ${profile.role}`}
-                        className="absolute inset-0 w-full h-full object-cover grayscale contrast-110 group-hover:grayscale-0 transition-all duration-500"
-                      />
-
-                      {/* Scanline */}
-                      <div
-                        className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-40"
-                        style={{
-                          backgroundImage:
-                            "repeating-linear-gradient(0deg, hsl(var(--void) / 0.6) 0px, hsl(var(--void) / 0.6) 1px, transparent 1px, transparent 3px)",
-                        }}
-                      />
-
-                      {/* Vignette */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-transparent to-void/30" />
-
-                      {/* Corners */}
-                      <div className="absolute top-2 left-2 w-3 h-3 border-t border-l border-volt" />
-                      <div className="absolute top-2 right-2 w-3 h-3 border-t border-r border-volt" />
-                      <div className="absolute bottom-2 left-2 w-3 h-3 border-b border-l border-volt" />
-                      <div className="absolute bottom-2 right-2 w-3 h-3 border-b border-r border-volt" />
-
-                      {/* Label */}
-                      <div className="absolute top-2 left-1/2 -translate-x-1/2 mono text-[9px] text-volt bg-void/70 px-2 py-0.5 border border-volt/40">
-                        Subject // {profile.handle}
-                      </div>
-                    </div>
+                          {/* Profile Image - Mobile */}
+                <div className="my-8 md:hidden w-full px-4 flex justify-center">
+                  <div className="w-full max-w-lg relative">
+                    <img
+                      src={portrait}
+                      alt={`${profile.name} — ${profile.role}`}
+                      className="w-full h-auto object-contain"
+                    />
                   </div>
                 </div>
 
@@ -119,47 +94,17 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-                <aside className="hidden md:flex flex-col justify-center p-8 col-span-3 border-l border-wire animate-fade-in">
-                  <div className="mono text-[10px] text-text-dim uppercase tracking-widest mb-6 flex items-center gap-3">
-                    <div className="size-1.5 border border-volt" />
-                    Array Telemetry
-                  </div>
-
-                    <div className="bg-panel border border-wire p-1 group">
-                      <div className="w-full aspect-square bg-wire/40 relative overflow-hidden">
-
-                        <img
-                          src={portrait}
-                          alt={`${profile.name} — ${profile.role}`}
-                          className="absolute inset-0 w-full h-full object-cover grayscale contrast-110 group-hover:grayscale-0 transition-all duration-500"
-                        />
-
-                        {/* Scanline */}
-                        <div
-                          className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-40"
-                          style={{
-                            backgroundImage:
-                              "repeating-linear-gradient(0deg, hsl(var(--void) / 0.6) 0px, hsl(var(--void) / 0.6) 1px, transparent 1px, transparent 3px)",
-                          }}
-                        />
-
-                        {/* Vignette */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-transparent to-void/30" />
-
-                        {/* Corners */}
-                        <div className="absolute top-2 left-2 w-3 h-3 border-t border-l border-volt" />
-                        <div className="absolute top-2 right-2 w-3 h-3 border-t border-r border-volt" />
-                        <div className="absolute bottom-2 left-2 w-3 h-3 border-b border-l border-volt" />
-                        <div className="absolute bottom-2 right-2 w-3 h-3 border-b border-r border-volt" />
-
-                        {/* ✅ THIS ADDS: Subject // RM_SYS */}
-                        <div className="absolute top-2 left-1/2 -translate-x-1/2 mono text-[9px] uppercase tracking-widest text-volt bg-void/70 px-2 py-0.5 border border-volt/40">
-                          Subject // {profile.handle}
-                        </div>
-
-                      </div>
-                    </div>
-                </aside>
+                {/* Profile Image - Desktop */}
+                {/* Profile Image - Desktop */}
+            <aside className="hidden md:flex justify-end items-center p-8 col-span-3 border-l border-wire animate-fade-in">
+              <div className="relative w-full flex justify-end!important">
+                <img
+                  src={portrait}
+                  alt={`${profile.name} — ${profile.role}`}
+                  className="w-[500px] max-w-none h-auto object-contain -translate-x-6"
+                />
+              </div>
+            </aside>
       </div>
     </section>
   );
