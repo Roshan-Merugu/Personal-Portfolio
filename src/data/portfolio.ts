@@ -85,6 +85,18 @@ export const projects: Project[] = [
   {
     id: "04",
     index: "PROJ_04",
+    title: "Personal Portfolio Website",
+    year: "2024",
+    description:
+      "A responsive personal portfolio website showcasing my projects, skills, and experience. Built with a modern design and optimized for performance.",
+    stack: ["HTML5", "CSS3", "JavaScript", "React.js", "TypeScript"],
+    demo: "https://personal-portfolio-phi-liart-75.vercel.app/",
+    github: "https://github.com/Roshan-Merugu/Personal-Portfolio",
+    status: "LIVE",
+  },
+  {
+    id: "05",
+    index: "PROJ_05",
     title: "Frontend Mentor Lab",
     year: "Ongoing",
     description:
