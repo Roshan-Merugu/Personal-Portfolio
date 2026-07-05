@@ -4,7 +4,6 @@ import { certifications } from "@/data/portfolio";
 export const Certificates = () => {
   return (
     <div>
-      <h3 className="display text-xl md:text-2xl text-text-main font-medium tracking-tight mb-6">Certifications</h3>
       <ol className="relative border-l border-wire ml-2">
         {certifications.map((c, i) => (
           <li key={`cert-${i}`} className="pl-8 pb-10 last:pb-0 relative group">

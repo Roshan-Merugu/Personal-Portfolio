@@ -21,7 +21,7 @@ export const profile = {
 
 export const about = {
   body: [
-    "I'm Roshan — A BTech Graduate from Aurora's Technological and Research Institute, specializing in Computer Science with a focus on Cybersecurity. My toolkit is anchored in HTML, CSS, JavaScript, Bootstrap and Flexbox, and I gravitate toward clean, accessible, mobile-first interfaces.",
+    "I'm Roshan — A BTech Graduate from Aurora's Technological and Research Institute. My toolkit is anchored in HTML, CSS, JavaScript, Bootstrap and Flexbox, and I gravitate toward clean, accessible, mobile-first interfaces.",
     "I've shipped responsive websites, API-driven applications, and a series of Frontend Mentor challenges — each one a small lab for sharpening craft. I love the velocity of startup environments: taking ownership, learning fast, and pushing every project a little further than the last.",
     "Long-term, I'm building toward becoming a Full-Stack Developer working on innovative products — and eventually launching a startup of my own around solutions that genuinely matter.",
   ],
