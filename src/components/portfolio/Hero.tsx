@@ -1,6 +1,6 @@
 import { ArrowDownToLine, ArrowRight, Github, Linkedin, Instagram } from "lucide-react";
 import { profile } from "@/data/portfolio";
-import portrait from "@/assets/roshan4.png";
+import portrait from "@/assets/edited1.png";
 
 export const Hero = () => {
   return (
