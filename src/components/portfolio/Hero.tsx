@@ -1,8 +1,29 @@
+import { useEffect, useState } from "react";
 import { ArrowDownToLine, ArrowRight, Github, Linkedin, Instagram } from "lucide-react";
 import { profile } from "@/data/portfolio";
-import portrait from "@/assets/edited2.png";
+import darkPortrait from "@/assets/edited1.png";
+import lightPortrait from "@/assets/version red.png";
 
 export const Hero = () => {
+  const [isDarkTheme, setIsDarkTheme] = useState(() => document.documentElement.classList.contains("dark"));
+
+  useEffect(() => {
+    const root = document.documentElement;
+
+    const updateTheme = () => {
+      setIsDarkTheme(root.classList.contains("dark"));
+    };
+
+    updateTheme();
+
+    const observer = new MutationObserver(updateTheme);
+    observer.observe(root, { attributes: true, attributeFilter: ["class"] });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const portrait = isDarkTheme ? darkPortrait : lightPortrait;
+
   return (
     <section id="top" className="relative border-b border-wire overflow-hidden">
       {/* faint grid background */}
