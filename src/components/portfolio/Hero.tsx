@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { ArrowDownToLine, ArrowRight, Github, Linkedin, Instagram } from "lucide-react";
 import { profile } from "@/data/portfolio";
-import darkPortrait from "@/assets/edited1.png";
-import lightPortrait from "@/assets/version red.png";
+import darkPortrait from "@/assets/Professional image.png";
+import lightPortrait from "@/assets/Professional image.png";
 
 export const Hero = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(() => document.documentElement.classList.contains("dark"));
