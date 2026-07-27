@@ -25,24 +25,24 @@ export const Contact = () => {
 
   return (
     <Section id="transmit" index="SEC_05" label="Transmit" title="Open a channel. Let's build something durable.">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-        <div className="lg:col-span-5 flex flex-col gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 lg:gap-10">
+        <div className="md:col-span-2 lg:col-span-5 flex flex-col gap-6 md:gap-8">
           <a
             href={`mailto:${profile.email}`}
-            className="group block border border-wire bg-panel p-6 hover:border-volt transition-colors"
+            className="group block border border-wire bg-panel p-4 md:p-6 hover:border-volt transition-colors"
           >
             <div className="mono text-[10px] uppercase tracking-widest text-text-dim mb-3 flex items-center gap-2">
-              <Mail className="size-3" /> Direct
+              <Mail className="size-3 flex-shrink-0" /> Direct
             </div>
-            <div className="display text-xl md:text-2xl text-text-main group-hover:text-volt transition-colors break-all">
+            <div className="display text-lg md:text-xl lg:text-2xl text-text-main group-hover:text-volt transition-colors break-all">
               {profile.email}
             </div>
           </a>
 
           <div className="border border-wire">
-            <div className="border-b border-wire px-4 py-3 mono text-[10px] uppercase tracking-widest text-text-dim flex justify-between">
+            <div className="border-b border-wire px-4 py-3 mono text-[10px] uppercase tracking-widest text-text-dim flex justify-between items-center">
               <span>// channels</span>
-              <span className="text-volt">3 OPEN</span>
+              <span className="text-volt flex-shrink-0">3 OPEN</span>
             </div>
             {[
               { Icon: Github, label: "GitHub", href: profile.socials.github, handle: "@Roshan-Merugu" },
@@ -54,15 +54,15 @@ export const Contact = () => {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-center justify-between px-4 py-4 hover:bg-panel transition-colors group ${
+                className={`flex items-center justify-between px-4 py-3 md:py-4 hover:bg-panel transition-colors group ${
                   i < arr.length - 1 ? "border-b border-wire" : ""
                 }`}
               >
-                <div className="flex items-center gap-4">
-                  <Icon className="size-4 text-text-dim group-hover:text-volt transition-colors" />
-                  <span className="mono text-xs uppercase tracking-widest text-text-main">{label}</span>
+                <div className="flex items-center gap-3 md:gap-4 min-w-0">
+                  <Icon className="size-4 text-text-dim group-hover:text-volt transition-colors flex-shrink-0" />
+                  <span className="mono text-xs uppercase tracking-widest text-text-main truncate">{label}</span>
                 </div>
-                <span className="mono text-[10px] uppercase tracking-widest text-text-dim group-hover:text-volt transition-colors">
+                <span className="mono text-[10px] uppercase tracking-widest text-text-dim group-hover:text-volt transition-colors flex-shrink-0 ml-2">
                   {handle} →
                 </span>
               </a>
@@ -70,10 +70,10 @@ export const Contact = () => {
           </div>
         </div>
 
-        <form onSubmit={onSubmit} className="lg:col-span-7 border border-wire bg-panel p-6 md:p-8 flex flex-col gap-6">
+        <form onSubmit={onSubmit} className="md:col-span-2 lg:col-span-7 border border-wire bg-panel p-4 md:p-6 lg:p-8 flex flex-col gap-4 md:gap-6">
           <div className="mono text-[10px] uppercase tracking-widest text-text-dim flex items-center justify-between">
             <span>// new.transmission</span>
-            <span className="text-volt flex items-center gap-2">
+            <span className="text-volt flex items-center gap-2 flex-shrink-0">
               <span className="size-1.5 bg-volt rounded-full animate-pulse" />
               ENCRYPTED
             </span>
@@ -100,6 +100,7 @@ export const Contact = () => {
             />
           </Field>
 
+
           <Field label="Payload" required>
             <textarea
               required
@@ -114,12 +115,12 @@ export const Contact = () => {
           <button
             type="submit"
             disabled={sending}
-            className="group relative self-start bg-volt text-void px-7 py-4 mono text-xs uppercase tracking-widest font-bold flex items-center gap-3 overflow-hidden hover:shadow-volt transition-shadow disabled:opacity-60"
+            className="group relative self-start bg-volt text-void px-6 md:px-7 py-3 md:py-4 mono text-xs uppercase tracking-widest font-bold flex items-center gap-3 overflow-hidden hover:shadow-volt transition-shadow disabled:opacity-60"
           >
             <div className="absolute inset-0 bg-text-main translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
-            <span className="relative z-10 flex items-center gap-3">
+            <span className="relative z-10 flex items-center gap-2 md:gap-3">
               {sending ? "Transmitting..." : "Send Transmission"}
-              <ArrowRight className="size-4 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="size-4 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </span>
           </button>
         </form>

@@ -11,8 +11,8 @@ type Props = {
 export const Section = ({ id, index, label, title, children }: Props) => {
   return (
     <section id={id} className="border-b border-wire">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-20 md:py-28">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-16 sm:py-20 md:py-28 lg:py-32">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 lg:gap-12">
           <header className="md:col-span-3 flex flex-col gap-3">
             <div className="mono text-[10px] uppercase tracking-[0.2em] text-volt flex items-center gap-3">
               <span className="size-1 bg-volt rounded-full" />
@@ -22,7 +22,7 @@ export const Section = ({ id, index, label, title, children }: Props) => {
               {label}
             </div>
             {title && (
-              <h2 className="display text-3xl md:text-4xl font-medium tracking-tight text-text-main mt-2 text-balance">
+              <h2 className="display text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-text-main mt-2 text-balance">
                 {title}
               </h2>
             )}

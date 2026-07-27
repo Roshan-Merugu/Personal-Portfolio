@@ -31,12 +31,8 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-void pointer-events-none" aria-hidden />
 
       <div className="relative max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12">
-        {/* Vertical guide lines */}
-        <div className="hidden md:block absolute top-0 bottom-0 left-[25%] w-px bg-wire pointer-events-none" />
-        <div className="hidden md:block absolute top-0 bottom-0 right-[25%] w-px bg-wire pointer-events-none" />
-
         {/* Left meta column */}
-        <aside className="hidden md:flex flex-col justify-end p-8 col-span-3 border-r border-wire animate-fade-in">
+        <aside className="hidden md:flex flex-col justify-end p-8 col-span-3 animate-fade-in">
           <div className="mono text-[10px] text-text-mute uppercase tracking-widest flex flex-col gap-2 pb-12">
             <span className="text-text-dim">Location</span>
             <span>{profile.coords.lat}</span>
@@ -51,7 +47,7 @@ export const Hero = () => {
         </aside>
 
         {/* Center content */}
-        <div className="col-span-1 md:col-span-6 px-6 py-24 md:py-36flex flex-col justify-center items-center md:items-start text-center md:text-left order-1        md:order-none">
+        <div className="col-span-1 md:col-span-6 px-6 md:px-8 py-16 sm:py-20 md:py-32 lg:py-36 flex flex-col justify-center items-center md:items-start text-center md:text-left">
          <div className="mono text-volt text-xs uppercase tracking-widest mb-8 flex items-center justify-center md:justify-start gap-3 animate-fade-up">
             <span className="inline-block w-8 h-px bg-volt" />
             {profile.role}
@@ -62,8 +58,8 @@ export const Hero = () => {
             {profile.name}
           </h1>
                           {/* Profile Image - Mobile */}
-                <div className="my-8 md:hidden w-full px-4 flex justify-center">
-                  <div className="w-full max-w-lg relative">
+                <div className="my-6 sm:my-8 md:hidden w-full px-4 flex justify-center">
+                  <div className="w-full max-w-sm relative">
                     <img
                       src={portrait}
                       alt={`${profile.name} — ${profile.role}`}
@@ -115,14 +111,14 @@ export const Hero = () => {
             </div>
           </div>
         </div>
+
                 {/* Profile Image - Desktop */}
-                {/* Profile Image - Desktop */}
-            <aside className="hidden md:flex justify-end items-center p-8 col-span-3 border-l border-wire animate-fade-in">
-              <div className="relative w-full flex justify-end!important">
+            <aside className="hidden md:flex justify-center items-center p-6 md:p-8 col-span-3 animate-fade-in">
+              <div className="relative w-full flex justify-center">
                 <img
                   src={portrait}
                   alt={`${profile.name} — ${profile.role}`}
-                  className="w-[500px] max-w-none h-auto object-contain -translate-x-6"
+                  className="w-500 max-w-xs md:max-w-sm lg:max-w-md h-auto object-contain"
                 />
               </div>
             </aside>

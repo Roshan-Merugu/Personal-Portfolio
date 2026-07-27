@@ -20,15 +20,15 @@ const StatusPill = ({ status }: { status: Project["status"] }) => {
 const ProjectRow = ({ p, i }: { p: Project; i: number }) => {
   return (
     <article
-      className="group grid grid-cols-12 gap-4 md:gap-6 py-8 border-t border-wire hover:bg-panel/40 transition-colors px-2 -mx-2"
+      className="group grid grid-cols-1 sm:grid-cols-12 gap-4 sm:gap-6 py-6 sm:py-8 border-t border-wire hover:bg-panel/40 transition-colors px-2 -mx-2"
       style={{ animationDelay: `${i * 60}ms` }}
     >
-      <div className="col-span-12 md:col-span-1 mono text-[10px] uppercase tracking-widest text-text-mute pt-1.5">
+      <div className="sm:col-span-1 mono text-[10px] uppercase tracking-widest text-text-mute pt-1.5">
         {p.index}
       </div>
-      <div className="col-span-12 md:col-span-5">
-        <div className="flex items-center gap-3 mb-2 flex-wrap">
-          <h3 className="display text-2xl md:text-3xl text-text-main font-medium tracking-tight">
+      <div className="sm:col-span-5">
+        <div className="flex items-start sm:items-center gap-3 mb-2 flex-wrap">
+          <h3 className="display text-2xl sm:text-3xl lg:text-4xl text-text-main font-medium tracking-tight">
             {p.title}
           </h3>
           <StatusPill status={p.status} />
@@ -37,7 +37,7 @@ const ProjectRow = ({ p, i }: { p: Project; i: number }) => {
           {p.year} — {p.stack.slice(0, 2).join(" / ")}
         </div>
       </div>
-      <div className="col-span-12 md:col-span-4">
+      <div className="sm:col-span-4">
         <p className="text-text-main/80 text-sm md:text-base leading-relaxed text-pretty mb-3">{p.description}</p>
         <div className="flex flex-wrap gap-1.5">
           {p.stack.map((s) => (
@@ -47,7 +47,7 @@ const ProjectRow = ({ p, i }: { p: Project; i: number }) => {
           ))}
         </div>
       </div>
-      <div className="col-span-12 md:col-span-2 flex md:flex-col gap-2 md:items-end mono text-[10px] uppercase tracking-widest">
+      <div className="sm:col-span-2 flex flex-row sm:flex-col gap-2 sm:items-end mono text-[10px] uppercase tracking-widest">
         {p.demo && (
           <a
             href={p.demo}
