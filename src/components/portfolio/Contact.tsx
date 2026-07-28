@@ -24,7 +24,7 @@ export const Contact = () => {
   };
 
   return (
-    <Section id="transmit" index="SEC_05" label="Transmit" title="Open a channel. Let's build something durable.">
+    <Section id="transmit" index="SEC_06" label="Transmit" title="Open a channel. Let's build something durable.">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 lg:gap-10">
         <div className="md:col-span-2 lg:col-span-5 flex flex-col gap-6 md:gap-8">
           <a

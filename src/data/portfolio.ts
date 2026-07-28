@@ -54,7 +54,7 @@ export const projects: Project[] = [
     description:
       "Responsive restaurant site with a modern menu system and contact pipeline. Built with the team — owned front-end layout, styling, and cross-device responsiveness.",
     stack: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Firebase"],
-    demo: "https://roshan-merugu.github.io/Restaurant-website/",
+    demo: "https://restaurant-website-three-gamma.vercel.app/",
     github: "https://github.com/Roshan-Merugu/Restaurant-website",
     status: "LIVE",
   },

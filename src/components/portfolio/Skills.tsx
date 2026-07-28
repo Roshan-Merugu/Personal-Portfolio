@@ -3,7 +3,7 @@ import { skills } from "@/data/portfolio";
 
 export const Skills = () => {
   return (
-    <Section id="stack" index="SEC_04" label="Stack" title="The toolchain. Sharpened daily.">
+    <Section id="stack" index="SEC_05" label="Stack" title="The toolchain. Sharpened daily.">
       <p className="text-text-main/75 leading-relaxed text-pretty mb-8 max-w-[62ch] text-base md:text-lg">
         Toolchain sharpened daily with modern technologies like{" "}
         <span className="text-volt">Supabase</span>,{" "}
