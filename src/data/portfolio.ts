@@ -128,6 +128,7 @@ export const experience: ExperienceEntry[] = [
       "Content Strategy",
       "Product Marketing",
       "Audience Growth",
+      "Data Analytics",
     ],
     highlights: [
       "Developed and published social media content to increase product awareness and communicate PrepLoom's value to students and fresh graduates.",
