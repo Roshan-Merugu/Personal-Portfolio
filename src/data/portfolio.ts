@@ -21,9 +21,11 @@ export const profile = {
 
 export const about = {
   body: [
-    "I'm Roshan — A BTech Graduate from Aurora's Technological and Research Institute. My toolkit is anchored in HTML, CSS, JavaScript, Bootstrap and Flexbox, and I gravitate toward clean, accessible, mobile-first interfaces.",
-    "I've shipped responsive websites, API-driven applications, and a series of Frontend Mentor challenges — each one a small lab for sharpening craft. I love the velocity of startup environments: taking ownership, learning fast, and pushing every project a little further than the last.",
-    "Long-term, I'm building toward becoming a Full-Stack Developer working on innovative products — and eventually launching a startup of my own around solutions that genuinely matter.",
+    "I'm Roshan — a BTech Graduate from Aurora's Technological and Research Institute. My toolkit is anchored in HTML, CSS, JavaScript, React, Bootstrap and Flexbox, and I gravitate toward clean, accessible, mobile-first interfaces. Alongside development, I've been exploring product growth, social media, and data analytics — learning how technology, content, and data come together to build better digital experiences.",
+
+    "I've shipped responsive websites, API-driven applications, and a series of Frontend Mentor challenges — each one a small lab for sharpening craft. I've also worked on product-focused initiatives involving content strategy, social media, audience engagement, product storytelling, and analytics. I love the velocity of startup environments: taking ownership, learning fast, experimenting with ideas, and pushing every project a little further than the last.",
+
+    "Long-term, I'm building toward becoming a Full-Stack Developer while developing stronger skills across product, growth, and data analytics. I want to work on innovative products where I can contribute not just by building the technology, but by understanding users, measuring what works, and continuously improving the product. Eventually, I want to launch a startup of my own around solutions that genuinely matter."
   ],
   facts: [
     { k: "Graduation", v: "2026" },
