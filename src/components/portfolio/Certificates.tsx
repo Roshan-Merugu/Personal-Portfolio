@@ -1,5 +1,6 @@
 // Certificate list only — Section wrapper moved to Achievements for combined archive
 import { certifications } from "@/data/portfolio";
+import { ArrowUpRight } from "lucide-react";
 
 export const Certificates = () => {
   return (
@@ -24,6 +25,16 @@ export const Certificates = () => {
               {c.org}
             </div>
             <p className="text-text-main/75 text-sm md:text-base leading-relaxed text-pretty">{c.detail}</p>
+            {c.credentials && (
+              <a
+                href={c.credentials}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 mt-3 mono text-[10px] uppercase tracking-widest text-text-dim hover:text-volt transition-colors"
+              >
+                Open Credential <ArrowUpRight className="size-3" />
+              </a>
+            )}
           </li>
         ))}
       </ol>

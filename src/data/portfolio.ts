@@ -77,7 +77,7 @@ export const projects: Project[] = [
     year: "2026",
     description:
       "Smart farm-to-consumer MVP that compresses the agricultural supply chain — direct, intermediary-free delivery from farms to customers within hours. Responsive UI focused on freshness, transparency, and speed.",
-    stack: ["HTML5", "CSS3", "JavaScript", "Responsive UI", "Vercel, Tailwind CSS, React.js, TypeScript, Vite, Supabase"],
+    stack: ["HTML5", "CSS3", "JavaScript", "Responsive UI", "Vercel", "Tailwind CSS", "React.js", "TypeScript", "Vite", "Supabase"],
     demo: "https://aero-harvest-farm-to-table-in-hours.vercel.app/",
     github: "https://github.com/Roshan-Merugu/AeroHarvest---Farm-to-Table-in-Hours",
     status: "LIVE",
@@ -145,26 +145,52 @@ export type Certification = {
   org: string;
   year: string;
   detail: string;
+  credentials?: string;
 };
 
 export const certifications: Certification[] = [
   {
     year: "2026",
+    title: "Developer Foundations",
+    org: "NxtWave CCBP 4.0",
+    detail: "Completion Certificate for the git, Git-Hub, version-control, Command line mastery.",
+    credentials: "https://drive.google.com/file/d/1HtKL92zpvPdrtR1xXaH0nuYXfzMpCcDP/view?usp=drive_link",
+  },
+
+  {
+    year: "2026",
     title: "Node.js",
     org: "NxtWave CCBP 4.0",
     detail:"Completion certificate for the Node.js course — mastering server-side JavaScript, Express.js, and API development.",
+    credentials: "https://drive.google.com/file/d/1_ByIdfXmItYmFWJOmlkZnHO7hBnYlME6/view?usp=sharing",
   },
   {
     year:"2026",
     title:"Node.js (Basic)",
     org:"HackerRank",
     detail:"Completion certificate for the Node.js (Basic) course — covering fundamental server-side JavaScript concepts and basic API development.",
+    credentials: "https://drive.google.com/file/d/1L8RnlqQZgsTVCcSzmMKwYkL2NdSUTtaR/view?usp=drive_link",
   },
   {
     year:"2026",
-    title:"SQL (Basic),(Intermediate),(Advanced)",
+    title:"SQL (Basic)",
     org:"HackerRank",
-    detail:"Completion certificate for the SQL courses — covering fundamental, intermediate, and advanced SQL concepts and techniques."
+    detail:"Completion certificate for the SQL courses — covering fundamental, intermediate, and advanced SQL concepts and techniques.",
+    credentials: "https://drive.google.com/file/d/1CTDWN3cg1mC1SyWFzl2RkG8fwn7iikKN/view?usp=drive_link",
+  },
+  {
+    year:"2026",
+    title:"SQL (Intermediate)",
+    org:"HackerRank",
+    detail:"Completion certificate for the SQL courses — covering fundamental, intermediate, and advanced SQL concepts and techniques.",
+    credentials: "https://drive.google.com/file/d/1KPEEsf_jwp44ATHCGYBFtpLQmCtslfIJ/view?usp=drive_link",
+  },  
+  {
+    year:"2026",
+    title:"SQL (Advanced)",
+    org:"HackerRank",
+    detail:"Completion certificate for the SQL courses — covering fundamental, intermediate, and advanced SQL concepts and techniques.",
+    credentials: "https://drive.google.com/file/d/1hjlacAW625qAoO_P0FiEzP1okMYLBydD/view?usp=drive_link",
   },
   {
     year: "2026",
@@ -172,6 +198,7 @@ export const certifications: Certification[] = [
     org: "NxtWave CCBP 4.0",
     detail:
       "Achievement certificate covering core JavaScript: DOM manipulation, async patterns, ES6+ features, and the foundations behind every dynamic interface I build.",
+    credentials: "https://drive.google.com/file/d/1SlQ_V_MoMHeg-UU_XwVsBF7u-kurgpuL/view?usp=drive_link",
   },
   {
     year: "2026",
@@ -179,6 +206,7 @@ export const certifications: Certification[] = [
     org: "NxtWave CCBP 4.0",
     detail:
       "Hands-on certification for engineering a fully dynamic web app — wiring JavaScript logic, state, and user flows end-to-end.",
+    credentials: "https://drive.google.com/file/d/1DBtiHNwRsdejYdP2DXoPT_vpzwzMiawJ/view?usp=drive_link",
   },
   {
     year: "2025",
@@ -186,6 +214,7 @@ export const certifications: Certification[] = [
     org: "OpenAI Academy × NxtWave",
     detail:
       "Certificate of Appreciation for participating in India's largest Generative AI buildathon — shipping a working AI-powered build under live constraints.",
+    credentials: "https://drive.google.com/file/d/1i4pbMuvEMNFoFtWRbTkRTxHO3qZwBBRt/view?usp=drive_link",
   },
   {
     year: "2025",
@@ -193,6 +222,7 @@ export const certifications: Certification[] = [
     org: "NxtWave CCBP 4.0",
     detail:
       "Project completion certificate for building with the Model Context Protocol — integrating Cursor IDE, Pipedream, and MCP servers for AI-assisted development workflows.",
+    credentials: "https://drive.google.com/file/d/1xJz_M-J_OraYJborcVnoLUGrkrwX1Ro9/view?usp=drive_link",
   },
   {
     year: "2025",
@@ -200,6 +230,7 @@ export const certifications: Certification[] = [
     org: "NxtWave CCBP 4.0",
     detail:
       "Achievement certificate covering relational modeling, normalized schema design, and the SQL fundamentals needed to power real applications.",
+    credentials: "https://drive.google.com/file/d/1fDHnyB5oKrCclgpRIhBpMxarCD0KaYpw/view?usp=drive_link",
   },
   {
     year: "2025",
@@ -207,6 +238,7 @@ export const certifications: Certification[] = [
     org: "HackerRank",
     detail:
       "Accomplishment certificate validating core Python proficiency through evaluated, timed problem-solving challenges.",
+    credentials: "https://drive.google.com/file/d/1AicWT4FP6CZBtBRNke9LL_RUmKpel9gH/view?usp=drive_link",
   },
   {
     year: "2024",
@@ -214,6 +246,7 @@ export const certifications: Certification[] = [
     org: "NxtWave CCBP 4.0",
     detail:
       "End-to-end Python foundations: data structures, control flow, and idiomatic problem solving — the analytical baseline behind everything I ship.",
+    credentials: "https://drive.google.com/file/d/1Reh7wWZJi0xvEQ_9i1Yu_HKste-_dO_P/view?usp=drive_link",
   },
   {
     year: "2024",
@@ -221,6 +254,7 @@ export const certifications: Certification[] = [
     org: "NxtWave CCBP 4.0",
     detail:
       "Certificate of Participation for completing an intensive workshop on generative AI tooling, prompt design, and applied model workflows.",
+    credentials: "https://drive.google.com/file/d/1wC34uz7x38VzoOVQ4HPDIuV5F_9UF4WN/view?usp=drive_link",
   },
   {
     year: "2024",
@@ -228,6 +262,7 @@ export const certifications: Certification[] = [
     org: "NxtWave CCBP 4.0",
     detail:
       "Achievement certificate for engineering a fully responsive website using Bootstrap and Flexbox — mobile-first, fluid, accessible across breakpoints.",
+    credentials: "https://drive.google.com/file/d/1PfHXkXYlHsP9XDYwwmF6SibZdjOPnvqQ/view?usp=drive_link",
   },
   {
     year: "2024",
@@ -235,6 +270,7 @@ export const certifications: Certification[] = [
     org: "NxtWave CCBP 4.0",
     detail:
       "Hands-on certification for shipping a production-grade static website with HTML5, CSS3, and Bootstrap — clean markup and intentional styling.",
+    credentials: "https://drive.google.com/file/d/1AkwhsMTe37zeeZj9R_T-i-QQI8NR-s19/view?usp=drive_link",
   },
   {
     year: "2024",
@@ -242,6 +278,7 @@ export const certifications: Certification[] = [
     org: "NxtWave CCBP 4.0",
     detail:
       "Certification covering Experiential Performance Mindset fundamentals — personal identity, integrity, goal setting, and operating with intent.",
+    credentials: "https://drive.google.com/file/d/1tJ5yYif7x4lyB4FSu2BDrbVgxDHN8v5l/view?usp=drive_link",
   },
   {
     year: "2024",
@@ -249,7 +286,16 @@ export const certifications: Certification[] = [
     org: "S.D.V.V.L CAD Centre",
     detail:
       "Workshop certificate for hands-on UI design fundamentals using Flutter — layout primitives, theming, and component composition.",
+    credentials: "https://drive.google.com/file/d/1X4eXTzmyygx3jwzVT3xsE2oVtKsiTcP6/view?usp=drive_link",
   },
+  {
+    year: "2024",
+    title: "Cybersecurity Analyst Job Simulation",
+    org: "Tata x Forage",
+    detail:
+    "Completed a practical cybersecurity job simulation covering IAM fundamentals, IAM strategy assessment, IAM solutions, and platform integration.",
+    credentials: "https://drive.google.com/file/d/1IZay3Z9nfPqZ088MZQ1ErnMupqc8IchO/view?usp=drive_link",
+},
   
 ]
 export type Achievement = {
@@ -257,6 +303,7 @@ export type Achievement = {
   title: string;
   org: string;
   detail: string;
+  credentials?: string;
 };
 
 export const achievements: Achievement[] = [
@@ -266,6 +313,7 @@ export const achievements: Achievement[] = [
     org: "NxtWave CCBP 4.0",
     detail:
       "Secured Rank 2 in the DSA CodeVerse weekly contest, demonstrating consistent problem-solving speed and algorithmic precision under pressure.",
+    credentials: "https://drive.google.com/file/d/1eSwIpxvvNdGDH0p4IcWYEPB5r0xdBt70/view?usp=drive_link",
   },
   {
     year: "2026",
@@ -273,8 +321,24 @@ export const achievements: Achievement[] = [
     org: "NxtWave CCBP 4.0",
     detail:
       "Secured Rank 5 in the DSA CodeVerse weekly contest — sharpening data structures, time complexity, and competitive coding instincts.",
+    credentials: "https://drive.google.com/file/d/11FIkDh4knVaGXv5PnqCAXcHQx7dzuvES/view?usp=drive_link",
   },
-  
+  {
+    year: "2026",
+    title: "Intro to AI/ML",
+    org: "NxtWave CCBP 4.0",
+    detail: 
+    "Completed the foundation course on the artificial intelligence and machine learning",
+    credentials: "https://drive.google.com/file/d/1C_IDwQDUE3B2lbXByFLnG8S0AG9XDWsc/view?usp=drive_link",
+  },
+  {  
+    year: "2026",
+    title: "Intro to OS",
+    org: "NxtWave CCBP 4.0",
+    detail: 
+    "Completed the foundation course on the Operating Systems",
+    credentials: "https://drive.google.com/file/d/1eLNXlV2PPZQuE4szm3S8L1Qoy_OIQjLe/view?usp=drive_link",
+  },
 ];
 
 export type EducationEntry = {

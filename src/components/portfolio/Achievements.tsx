@@ -2,7 +2,7 @@ import { Section } from "./Section";
 import { achievements } from "@/data/portfolio";
 import { certifications } from "@/data/portfolio";
 import { Certificates } from "./Certificates";
-import { Award } from "lucide-react";
+import { ArrowUpRight, Award } from "lucide-react";
 
 export const Achievements = () => {
   return (
@@ -28,6 +28,16 @@ export const Achievements = () => {
               {a.org}
             </div>
             <p className="text-text-main/75 text-sm md:text-base leading-relaxed text-pretty">{a.detail}</p>
+            {a.credentials && (
+              <a
+                href={a.credentials}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 mt-3 mono text-[10px] uppercase tracking-widest text-text-dim hover:text-volt transition-colors"
+              >
+                Open Credential <ArrowUpRight className="size-3" />
+              </a>
+            )}
           </li>
         ))}
       </ol>
