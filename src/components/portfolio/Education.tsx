@@ -6,7 +6,7 @@ export const Education = () => {
   return (
     <Section
       id="log"
-      index="SEC_04"
+      index="SEC_05"
       label="Trace Archive"
       title="Academic signal — calibrated over the years."
     >

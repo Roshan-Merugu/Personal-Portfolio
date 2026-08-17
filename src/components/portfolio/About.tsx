@@ -3,7 +3,7 @@ import { about } from "@/data/portfolio";
 
 export const About = () => {
   return (
-    <Section id="about" index="SEC_02" label="About" title="Operator profile and field notes.">
+    <Section id="about" index="SEC_03" label="About" title="Operator profile and field notes.">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-10 lg:gap-12">
         <div className="md:col-span-2 lg:col-span-7 space-y-6">
           {about.body.map((p, i) => (

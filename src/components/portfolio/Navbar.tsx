@@ -5,6 +5,7 @@ import { profile } from "@/data/portfolio";
 
 const NAV = [
   { id: "work", label: "Work" },
+  { id: "experience", label: "Experience" },
   { id: "about", label: "About" },
   { id: "archive", label: "Archive" },
   { id: "log", label: "Log" },

@@ -6,7 +6,7 @@ import { Award } from "lucide-react";
 
 export const Achievements = () => {
   return (
-    <Section id="archive" index="SEC_03" label="Achievements & Certifications" title="Milestones & certifications.">
+    <Section id="archive" index="SEC_04" label="Achievements & Certifications" title="Milestones & certifications.">
       <ol className="relative border-l border-wire ml-2 md:ml-4">
         {achievements.map((a, i) => (
           <li key={`ach-${i}`} className="pl-6 md:pl-8 pb-8 md:pb-10 last:pb-0 relative group">

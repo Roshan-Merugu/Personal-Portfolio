@@ -106,6 +106,39 @@ export const projects: Project[] = [
     status: "WIP",
   },
 ];
+
+export type ExperienceEntry = {
+  period: string;
+  role: string;
+  product: string;
+  description: string;
+  highlights: string[];
+  tags: string[];
+  location?: string;
+};
+
+export const experience: ExperienceEntry[] = [
+  {
+    period: "Aug 2026 - Present",
+    role: "Social Media & Product Growth",
+    product: "PrepLoom",
+    description:
+      "Technical interview preparation platform focused on helping students and fresh graduates prepare more effectively.",
+    tags: [
+      "Content Strategy",
+      "Product Marketing",
+      "Audience Growth",
+    ],
+    highlights: [
+      "Developed and published social media content to increase product awareness and communicate PrepLoom's value to students and fresh graduates.",
+      "Created promotional reels, product-update creatives, and educational content around technical interview preparation and student pain points.",
+      "Used audience engagement, feedback, and content performance insights to refine messaging and identify content opportunities.",
+    ],
+    location: "Hyderabad, India",
+  },
+];
+
+
 export type Certification = {
   title: string;
   org: string;
