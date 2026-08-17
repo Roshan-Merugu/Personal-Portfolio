@@ -4,7 +4,7 @@ export const profile = {
   role: "Full-Stack Developer",
   tagline: "Building secure, futuristic web experiences with modern tech.",
   intro:
-    "B.Tech Graduate crafting responsive, user-focused interfaces. I ship clean front-end systems where every interaction is intentional and every pixel is accountable.",
+  "B.Tech Graduate building full-stack products with the MERN stack and exploring data analytics. I combine clean engineering, responsive experiences, and data-driven thinking to build products that solve real problems.",
   location: "Hyderabad, IN",
   coords: { lat: "17.3850 N", lng: "78.4867 E" },
   email: "meruguroshan24@gmail.com",
