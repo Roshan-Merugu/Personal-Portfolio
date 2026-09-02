@@ -51,6 +51,17 @@ export const projects: Project[] = [
   {
     id: "01",
     index: "PROJ_01",
+    title: "Assessment Platform",
+    year: "2026",
+    description:
+    "An assessment platform for students, teachers, and institutions. It allows students to take assessments, teachers to create and manage assessments, and institutions to track performance. Working as a Backend Developer",
+    stack:["React.js", "Prisma", "MySQL", "Node.js", "Git", "Vite", "Tailwind CSS", "TypeScript", "Express.js"],
+    github: "https://github.com/nandu-99/assessment-platform.git",
+    status: "WIP",
+  },
+  {
+    id: "02",
+    index: "PROJ_02",
     title: "Restaurant Website",
     year: "2024",
     description:
@@ -61,8 +72,8 @@ export const projects: Project[] = [
     status: "LIVE",
   },
   {
-    id: "02",
-    index: "PROJ_02",
+    id: "03",
+    index: "PROJ_03",
     title: "Live Weather App",
     year: "2024",
     description:
@@ -73,8 +84,8 @@ export const projects: Project[] = [
     status: "LIVE",
   },
   {
-    id: "03",
-    index: "PROJ_03",
+    id: "04",
+    index: "PROJ_04",
     title: "AeroHarvest — Farm to Table in Hours",
     year: "2026",
     description:
@@ -85,8 +96,8 @@ export const projects: Project[] = [
     status: "LIVE",
   },
   {
-    id: "04",
-    index: "PROJ_04",
+    id: "05",
+    index: "PROJ_05",
     title: "Personal Portfolio Website",
     year: "2024",
     description:
@@ -95,17 +106,6 @@ export const projects: Project[] = [
     demo: "https://personal-portfolio-phi-liart-75.vercel.app/",
     github: "https://github.com/Roshan-Merugu/Personal-Portfolio",
     status: "LIVE",
-  },
-  {
-    id: "05",
-    index: "PROJ_05",
-    title: "Frontend Mentor Lab",
-    year: "Ongoing",
-    description:
-      "An evolving collection of Frontend Mentor challenges — sharpening layout precision, component composition, and design-to-code translation.",
-    stack: ["HTML5", "CSS3", "JavaScript", "Flexbox"],
-    demo: "https://www.frontendmentor.io/profile/Roshan-Merugu",
-    status: "WIP",
   },
 ];
 
