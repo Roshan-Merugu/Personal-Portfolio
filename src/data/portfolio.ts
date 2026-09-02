@@ -121,6 +121,23 @@ export type ExperienceEntry = {
 
 export const experience: ExperienceEntry[] = [
   {
+    period: "Sep 2026 - Present",
+    role: "Associate Full-Stack Developer and Testing",
+    product: "Edjisify",
+    description:
+    "Edgistify offers AI-driven integrated solutions for B2B, B2C & D2C companies across multiple industries.",
+    tags: [
+      "Frontend Development",
+      "Backend Development",
+      "Full-Stack Development",
+      "Manual Testing",
+      "Database Management",
+    ],
+    highlights: [
+    ],
+    location: "Thane, Mumbai, India",
+  },
+  {
     period: "Aug 2026 - Present",
     role: "Social Media & Product Growth",
     product: "PrepLoom",
