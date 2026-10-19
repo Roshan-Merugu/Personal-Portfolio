@@ -4,7 +4,7 @@ export const profile = {
   role: "Full-Stack Developer",
   tagline: "Building secure, futuristic web experiences with modern tech.",
   intro:
-  "B.Tech Graduate building full-stack products with the MERN stack and exploring data analytics. I combine clean engineering, responsive experiences, and data-driven thinking to build products that solve real problems.",
+  "Associate Full Stack Developer & Tester at Edgistify, building and testing real-world applications while growing my expertise in full-stack development, API integration, and data analytics. Passionate about clean code, responsive user experiences, continuous learning, and exploring opportunities to build impactful products.",
   location: "Hyderabad, IN",
   coords: { lat: "17.3850 N", lng: "78.4867 E" },
   email: "meruguroshan24@gmail.com",
@@ -21,12 +21,13 @@ export const profile = {
 
 export const about = {
   body: [
-    "I'm Roshan — a BTech Graduate from Aurora's Technological and Research Institute. My toolkit is anchored in HTML, CSS, JavaScript, React, Bootstrap and Flexbox, and I gravitate toward clean, accessible, mobile-first interfaces. Alongside development, I've been exploring product growth, social media, and data analytics — learning how technology, content, and data come together to build better digital experiences.",
+"I'm Roshan — a BTech graduate from Aurora's Technological and Research Institute, currently working as an Associate – Full Stack Developer & Tester at Edgistify. My technical toolkit includes HTML, CSS, JavaScript, React, Bootstrap, Python, FastAPI, databases, and REST APIs. I enjoy building responsive user interfaces, developing backend functionality, testing applications, and solving real-world problems through technology.",
 
-    "I've shipped responsive websites, API-driven applications, and a series of Frontend Mentor challenges — each one a small lab for sharpening craft. I've also worked on product-focused initiatives involving content strategy, social media, audience engagement, product storytelling, and analytics. I love the velocity of startup environments: taking ownership, learning fast, experimenting with ideas, and pushing every project a little further than the last.",
+"At Edgistify, I'm gaining hands-on experience in full-stack development, API integration, debugging, functional testing, and building solutions for logistics workflows. Every task is an opportunity to strengthen my technical foundation, understand real-world product requirements, and learn how reliable software is designed, developed, and delivered. Beyond development, I'm also interested in product growth, content strategy, social media, and data analytics — exploring how technology, creativity, and data work together to create meaningful digital experiences.",
 
-    "Long-term, I'm building toward becoming a Full-Stack Developer while developing stronger skills across product, growth, and data analytics. I want to work on innovative products where I can contribute not just by building the technology, but by understanding users, measuring what works, and continuously improving the product. Eventually, I want to launch a startup of my own around solutions that genuinely matter."
-  ],
+"For me, joining Edgistify is a beginning, not a destination. I'm committed to continuously improving my skills, gaining practical experience, taking on greater challenges, and learning from people who push me to think differently. I'm open to opportunities that allow me to contribute, grow, and explore new possibilities across full-stack development and product engineering. My long-term vision is to become a well-rounded developer who can turn ideas into impactful products and, eventually, build a startup of my own that solves problems that genuinely matter."
+],
+
   facts: [
     { k: "Graduation", v: "2026" },
     { k: "Stream", v: "CSE / CS" },
@@ -120,23 +121,36 @@ export type ExperienceEntry = {
 };
 
 export const experience: ExperienceEntry[] = [
-  {
-    period: "Sep 2026 - Present",
-    role: "Associate Full-Stack Developer and Testing",
-    product: "Edjisify",
-    description:
-    "Edgistify offers AI-driven integrated solutions for B2B, B2C & D2C companies across multiple industries.",
-    tags: [
-      "Frontend Development",
-      "Backend Development",
-      "Full-Stack Development",
-      "Manual Testing",
-      "Database Management",
-    ],
-    highlights: [
-    ],
-    location: "Thane, Mumbai, India",
-  },
+{
+  period: "Sep 2026 - Present",
+  role: "Associate Full-Stack Developer & Tester",
+  product: "Edgistify",
+  description:
+    "Contributing to the development and testing of AI-driven logistics solutions for B2B and B2C operations, working across frontend interfaces, backend APIs, database operations, workflow automation, and notification systems.",
+  tags: [
+    "Full-Stack Development",
+    "React.js",
+    "JavaScript",
+    "Python",
+    "FastAPI",
+    "REST APIs",
+    "Database Management",
+    "Functional Testing",
+    "Workflow Automation",
+    "AI Integration"
+  ],
+  highlights: [
+    "Developed and enhanced logistics workflows for B2B shipments, including appointment-based delivery, pickup management, and shipment status tracking.",
+    "Worked on backend APIs, database operations, and business logic to support operational workflows and reliable data processing.",
+    "Enhanced notification systems and configurable email digests, including pickup status updates, scheduled reminders, and commercial red-flag notifications.",
+    "Implemented and refined email-based pickup status workflows with status validation, duplicate-submission prevention, and status history tracking.",
+    "Contributed to AI-powered document extraction and automatic field population for B2B order creation, with a focus on preserving existing workflows.",
+    "Improved administrative interfaces, data tables, filters, and operational dashboards to make logistics data easier to manage.",
+    "Investigated and fixed issues involving API integrations, shipment workflows, notification scheduling, email delivery, and courier mapping.",
+    "Performed functional testing, debugging, and automated testing to validate application behavior and prevent regressions."
+  ],
+  location: "Thane West, Maharashtra, India"
+},
   {
     period: "Aug 2026 - Present",
     role: "Social Media & Product Growth",
