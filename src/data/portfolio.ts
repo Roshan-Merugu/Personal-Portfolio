@@ -416,11 +416,11 @@ export const skills = [
   },
   {
     category: "Backend & Data",
-    items: ["Supabase", "PostgreSQL", "REST APIs", "Authentication", "Firebase", "Python", "SQL"],
+    items: ["Supabase", "PostgreSQL", "REST APIs", "Authentication", "Firebase", "Python", "SQL", "FastAPI", "MongoDB", "Pydantic", "AI integration"],
   },
   {
     category: "Tools & Platforms",
-    items: ["Git", "GitHub", "VS Code", "Vercel", "Bootstrap", "Flexbox", "Responsive Design"],
+    items: ["Git", "GitHub", "VS Code", "Vercel", "Bootstrap", "Flexbox", "Responsive Design", "Postman", "Functional Testing", "UI Testing", "Claude"],
   },
 ];
 
